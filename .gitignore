@@ -1,0 +1,19 @@
+# Archivos de configuración de AWS (evitar exponer credenciales)
+.aws/
+*.pem
+*.key
+
+# Archivos de Terraform (evitar estados sensibles)
+terraform.tfstate
+terraform.tfstate.backup
+.terraform/
+.terraform.lock.hcl
+
+# Archivos ZIP de Lambda (generados localmente)
+lambda_function.zip
+
+# Archivos de logs y cache innecesarios
+*.log
+__pycache__/
+*.pyc
+.DS_Store
